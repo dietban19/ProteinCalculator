@@ -127,8 +127,8 @@ function App() {
         </button>
 
         <div className="result">
-          <h2 className="result-title">Cost per gram of protein:</h2>
-          <p className="result-value">${calculateProteinCost()}</p>
+          <h2 className="result-title">Grams Of Protein Per Dollar</h2>
+          <p className="result-value">{calculateProteinCost()} g of Protein</p>
         </div>
 
         {proteinList.length > 0 && (
@@ -137,8 +137,8 @@ function App() {
             <ul>
               {proteinList.map((protein, index) => (
                 <li key={index} className="saved-item">
-                  <strong>{protein.name}</strong>: ${protein.costPerGram} per
-                  gram of protein
+                  <strong>{protein.name}</strong>: {protein.costPerGram} g of
+                  Protein
                   <button
                     className="delete-button"
                     onClick={() => handleDelete(index)}

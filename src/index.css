@@ -3,9 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f0f8ff;
   font-family: 'Arial', sans-serif;
+  padding: 10px;
 }
 
 .calculator-card {
@@ -22,12 +23,14 @@
   font-weight: bold;
   color: #007bff;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .description {
   font-size: 14px;
   color: #6c757d;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .input-group {
@@ -122,4 +125,94 @@
 
 .delete-button:hover {
   background: #cc0000;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .calculator-card {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .input {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .calculate-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .result-title {
+    font-size: 15px;
+  }
+
+  .result-value {
+    font-size: 16px;
+  }
+
+  .saved-title {
+    font-size: 16px;
+  }
+
+  .saved-item {
+    font-size: 13px;
+  }
+
+  .delete-button {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .input {
+    font-size: 12px;
+  }
+
+  .calculate-button {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .result-title {
+    font-size: 14px;
+  }
+
+  .result-value {
+    font-size: 15px;
+  }
+
+  .saved-title {
+    font-size: 14px;
+  }
+
+  .saved-item {
+    font-size: 12px;
+  }
+
+  .delete-button {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
 }
